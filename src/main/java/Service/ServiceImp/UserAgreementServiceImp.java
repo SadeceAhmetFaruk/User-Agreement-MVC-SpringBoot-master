@@ -14,7 +14,7 @@ public class UserAgreementServiceImp implements UserAgreementService {
     }
 
     @Override
-    public UserAgreement saveTransaction(UserAgreement userAgreement) {
+    public UserAgreement saveUserAgreements(UserAgreement userAgreement) {
         return userAgreementRepository.save(userAgreement);
     }
 
@@ -24,7 +24,7 @@ public class UserAgreementServiceImp implements UserAgreementService {
     }
 
     @Override
-    public List<UserAgreement> findAllTransactions() {
+    public List<UserAgreement> findAllUserAgreements() {
         return userAgreementRepository.findAll();
     }
 }

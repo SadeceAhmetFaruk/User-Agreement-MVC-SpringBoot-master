@@ -7,9 +7,9 @@ import java.util.List;
 public interface UserAgreementService {
 
 
-    UserAgreement saveTransaction(UserAgreement userAgreement);
+    UserAgreement saveUserAgreements(UserAgreement userAgreement);
 
     Long numberOfUserAgreements();
 
-    List<UserAgreement> findAllTransactions();
+    List<UserAgreement> findAllUserAgreements();
 }

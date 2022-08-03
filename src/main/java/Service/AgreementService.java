@@ -13,12 +13,12 @@ public interface AgreementService {
 
 
     //List ALL Agreements
-    List<Agreement> ListAllAgreement(Agreement agreement);
+    List<Agreement> ListAllAgreement();
 
     //Number of Agreemn
     Long numberOfAgrements();
 
-    //Create a Agreement
+    //Create and update Agreement
     Agreement SaveAgreement(Agreement agreement);
 
     //Delete By ID

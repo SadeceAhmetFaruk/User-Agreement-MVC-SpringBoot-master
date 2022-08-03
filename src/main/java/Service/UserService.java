@@ -11,7 +11,7 @@ public interface UserService {
     User ListById(Long user_id);
 
     //List ALL Agreements
-    List<User> ListAllUsers(User user);
+    List<User> ListAllUsers();
 
     //Update  Agreement
     User updateUser(User user);
@@ -28,4 +28,5 @@ public interface UserService {
     //Delete By Name
     void DeleteUserByName(User User);
 
+    User findByUsername(String username);
 }

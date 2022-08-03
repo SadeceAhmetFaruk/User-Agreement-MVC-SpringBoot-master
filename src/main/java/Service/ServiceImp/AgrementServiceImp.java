@@ -22,7 +22,7 @@ public class AgrementServiceImp implements AgreementService
     }
 
     @Override
-    public List<Agreement> ListAllAgreement(Agreement agreement) {
+    public List<Agreement> ListAllAgreement() {
         return agreementRepository.findAll();
     }
 

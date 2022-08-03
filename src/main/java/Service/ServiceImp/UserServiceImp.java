@@ -15,14 +15,13 @@ public class UserServiceImp implements UserService {
         this.userRepository = userRepository;
     }
 
-
     @Override
     public User ListById(Long user_id) {
        return  userRepository.findById(user_id).orElse(null);
     }
 
     @Override
-    public List<User> ListAllUsers(User user) {
+    public List<User> ListAllUsers() {
         return  userRepository.findAll();
     }
 
@@ -50,4 +49,11 @@ public class UserServiceImp implements UserService {
     public void DeleteUserByName(User user) {
          userRepository.delete(user);
     }
+
+    @Override
+    public User findByUsername(String username) {
+       return userRepository.findByUsername(username).orElse(null);
+
+    }
+
 }

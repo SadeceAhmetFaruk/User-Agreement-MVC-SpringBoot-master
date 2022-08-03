@@ -10,6 +10,7 @@ import java.io.File;
 @Entity
 @Table(name = "Agreement")
 public class Agreement {
+
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,9 +22,12 @@ public class Agreement {
     @Column(name = "agrement_name", nullable = false)
     private String agrement_name;
 
-    @Column(name = "agrement_file",nullable = false)
+    @Column(name = "agrement_total_price", nullable = false)
+    private Double agrement_total_price;
+
+    @Column(name = "agreement_withdrawal_fee", nullable = false)
+    private Double agreement_withdrawal_fee;
+
+    @Column(name = "agrement_file",nullable = true)
     private File agrement_file;
-
-
-
 }
