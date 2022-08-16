@@ -6,4 +6,4 @@ lombok
 JPA 
 Spring Web
 Spring Security
-DEv Ops 
+Developer  
